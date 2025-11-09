@@ -1,0 +1,112 @@
+public enum Camere{
+	NEVE,
+	FICCO,
+	ABETE,
+	DEAFULT;
+}
+
+
+public class Prenotazione {
+
+	private String nome = null;
+	private Camere camera = Camera.DEAFULT;
+	private LocalDate checkIN;
+	private LocalDate checkOUT;
+
+public Prenotazione(String nome,Camere camera,LocalDate checkIN,LocalDate checkOUT){
+
+		this.nome = nome;
+		this.camera = camera;
+		this.checkIN = checkIN;
+		this.checkOUT = checkOUT;
+	}
+
+ public void setName(String name){this.name = name;}
+
+ public String getName(){return name;}
+
+ public void setCamera(Camere camera){this.camera = camere;}
+
+ public Camere getCamera(){return camera;}
+
+ public void setChekIN(LocalDate checkIN){this.checkIN = checkIN;}
+
+
+ public LocalDate getCheckIN(){return checkIN}
+
+ public void setChekOUT(LocalDate checkOUT){this.checkOUT = checkOUT;} 
+
+ public LocalDate getCheckOUT(){return checkOUT;}
+
+ @overide
+ public String ToSting(){
+
+  return "PRENOTAZIONE: " + "/nNome :" + this.nome + "/nCamera: " + this.Camera + "/nCheck in: " + this.checkIN + "/nCheck out: " + this.checkOUT;
+
+ }
+
+}
+
+
+public class Prenotazioni{
+
+ private static ArrayList<Prenotazioni> prenotazioni = new ArrayList<>();
+
+ public Prenotazioni(ArrayList<Prenotazioni> prenotazioni){
+	this.prenotazioni = prenotazioni;
+ }
+
+ public Prenotazioni(ArrayList<Prenotazioni> prenotazioni){this.prenotazioni = prenotazioni;}
+
+ public ArrayList<Prenotazioni> getPrenotazioni(){return prenotazioni;}	
+
+ public void setPrenotazioni(ArrayList<Prenotazione> prenotazioni){this.prenotazioni = prenotazione}
+
+
+ @overide
+ public String toString(){
+	return "Prenotaioni: " + this.prenotazioni;
+ }
+
+ public static void nuovaPrenotazione(Prenotazione prenotazione)
+
+	for(Prenotazione p : prenotazioni){
+		if(prenotazione.getCamera() == p.getCamera()){
+			if(p.getCheckIN()+"" == prenotazione.getCheckIN()+""){
+				sistemOutPrintln("camera gia prenotata")
+			}else{
+				prenotzioni.add(prenotazione)
+				sout("prenotazione riuscita);
+				}
+		}
+	}
+	
+ }
+
+
+
+ public static void main(args[0]){
+	
+	Prenotazioni p = new ArrayList<Prenotazione>
+		p.add(new prenotazione("name",Camere.DEAFULT,2025.10.16,2025.10.21);
+	Prenotazione pt  = new prenotazione("pippo",Camere.DEAFULT,2025.10.16,2025.10.21);
+	
+	nuoavaPrenotazione(pt);
+ }
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
