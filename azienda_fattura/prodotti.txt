@@ -1,0 +1,2 @@
+chiodo;1;2
+martello;15;2
